@@ -10,7 +10,7 @@ body {
     /* font-family: 'Open Sans', Arial, sans-serif;
     color: #444; */
     text-align: center;
-    padding-top: 0em;
+    /* padding-top: 0em; */
     padding-bottom: 50px;
 }
 
@@ -34,16 +34,16 @@ h3 {
     color: #444;
     font-size: 1.1em;
     line-height: 0.5em;
-    margin: 1.5em;
+    margin-bottom: 0.5em;
     font-style: italic;
 }
 
 h4 {
     font-family: 'Playfair Display', Garamond, serif;
     color: #444;
-    font-size: 0.8em;
-    line-height: 0.5em;
-    margin: 0.5em;
+    font-size: 0.9em;
+    line-height: 2em;
+    margin: 0.2em;
     font-style: italic;
 }
 
