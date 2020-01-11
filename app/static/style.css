@@ -54,6 +54,13 @@ p {
     line-height: 2.2em;
 }
 
+/* li {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #444;
+    font-size: 1.2em;
+    line-height: 2.2em;
+} */
+
 .image {
     vertical-align: bottom;
 }
