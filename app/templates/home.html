@@ -4,10 +4,6 @@
     Home
 {% endblock %}
 
-<!-- {% block header %}
-    <h1>Justin Kim</h1>
-{% endblock %} -->
-
 {% block content %}
     <h1>Justin Kim</h1>
 
@@ -78,6 +74,7 @@
 
     <h2>Projects</h2>
     <h3><a href="https://github.com/kjong/rpg-reddit-bot">RPG Reddit Bot</a></h3>
+    <h4><a href="{{ url_for('char_gen') }}">try me!</a></h4>
     <p>
         A Reddit Bot that continuously monitors Reddit comments for a specified keyword<br />
         Once found, it automatically generates a custom role-playing game character based on the commenter's username<br />
