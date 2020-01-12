@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    RPG Character Generator
+{% endblock %}
+
+{% block content %}
+    <h1>RPG Character Generator</h1>
+    <h2>Generate your own role-playing game character!</h2>
+
+    <h3><a href="https://github.com/kjong/rpg-character-generator">GitHub</a></h3>
+
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name_input.label }}<br />
+            {{ form.name_input(size=64) }}<br />
+            {{ form.submit() }}
+        </p>
+    </form>
+
+    <h4><a href="{{ url_for('home') }}">home</a></h4>
+{% endblock %}

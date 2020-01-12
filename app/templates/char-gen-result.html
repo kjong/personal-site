@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    RPG Character Generator
+{% endblock %}
+
+{% block content %}
+    <h1>RPG Character Generator</h1>
+    <h2>Your character</h2>
+
+    <h3>{{ form.name_input.data }} the {{ char_dict.get("surname") }}</h3>
+
+    <div class="row">
+        <div class="column2">
+            <p>
+                Race: <b>{{ char_dict.get("race") }}</b><br />
+                Cosmic force: <b>{{ char_dict.get("cosmic force") }}</b><br />
+                Alignment: <b>{{ char_dict.get("alignment") }}</b><br />
+                Weapon: <b>{{ char_dict.get("weapon") }}</b><br />
+                Utility Item: <b>{{ char_dict.get("utility item") }}</b>
+            </p>
+        </div>
+        <div class="column2">
+            <p>
+                Strength: <b>{{ char_dict.get("strength") }}</b><br />
+                Agility: <b>{{char_dict.get("agility") }}</b><br />
+                Intelligence: <b>{{char_dict.get("intelligence")}}</b><br />
+                Charisma: <b>{{char_dict.get("charisma") }}</b>
+            </p>
+        </div>
+    </div>
+
+    <h4><a href="{{ url_for('char_gen_form') }}">generate a new character</a></h4>
+    <h4><a href="{{ url_for('home') }}">home</a></h4>
+{% endblock %}

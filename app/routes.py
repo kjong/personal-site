@@ -1,5 +1,8 @@
-from flask import render_template, send_from_directory
+import random
+from flask import redirect, render_template, send_from_directory
 from app import app
+from app.forms import InputForm
+from .rpg import char_gen
 
 
 @app.route('/')
@@ -13,6 +16,16 @@ def resume():
                                mimetype='application/pdf', as_attachment=True)
 
 
-@app.route('/char-gen')
-def char_gen():
-    return render_template("char_gen.html")
+@app.route('/char_gen_form', methods=['GET', 'POST'])
+def char_gen_form():
+    form = InputForm()
+
+    if form.validate_on_submit():
+        random.seed(form.name_input)
+        char_num = "%0.16d" % random.randint(0, 9999999999999999)
+        char_dict = char_gen.main(form.name_input, char_num)
+
+        return render_template("char-gen-result.html", form=form,
+                               char_dict=char_dict)
+
+    return render_template("char-gen-form.html", form=form)
