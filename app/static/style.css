@@ -24,7 +24,6 @@ h2 {
 }
 
 h3 {
-    /* font-family: 'Playfair Display', Garamond, serif; */
     font-family: 'Open Sans', Arial, sans-serif;
     color: #444;
     font-size: 1.1em;
@@ -33,7 +32,6 @@ h3 {
 }
 
 h4 {
-    /* font-family: 'Playfair Display', Garamond, serif; */
     font-family: 'Open Sans', Arial, sans-serif;
     color: #444;
     font-size: 0.9em;
@@ -48,6 +46,10 @@ p {
     line-height: 2.2em;
     margin-bottom: 2em;
 }
+
+/* li {
+
+} */
 
 .column {
     float: left;
@@ -75,7 +77,6 @@ p {
 
 a:link {
     color: #444
-    /* border-bottom: 1px solid #ddd; */
 }
 
 a:visited {
@@ -84,5 +85,4 @@ a:visited {
 
 a:hover {
     color: #2196F3
-    /* border-bottom: 1px solid #222; */
 }
