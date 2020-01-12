@@ -9,4 +9,5 @@ def home():
 
 @app.route('/resume')
 def resume():
-    return send_from_directory('uploads', 'Resume.pdf', mimetype='application/pdf', as_attachment=True)
+    return send_from_directory('uploads', 'Resume.pdf',
+                               mimetype='application/pdf', as_attachment=True)

@@ -4,21 +4,15 @@
 
 body {
     background-color: #eee;
-    /* margin-top: 50px;
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-    /* font-family: 'Open Sans', Arial, sans-serif;
-    color: #444; */
     text-align: center;
-    /* padding-top: 0em; */
-    padding-bottom: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 h1 {
     font-family: 'Playfair Display', Garamond, serif;
     color: #222;
     font-size: 5em;
-    margin: 0.3em;
 }
 
 h2 {
@@ -26,24 +20,24 @@ h2 {
     color: #222;
     font-size: 2em;
     line-height: 1.33em;
-    margin: 0.5em;
+    margin-top: 2em;
 }
 
 h3 {
-    font-family: 'Playfair Display', Garamond, serif;
+    /* font-family: 'Playfair Display', Garamond, serif; */
+    font-family: 'Open Sans', Arial, sans-serif;
     color: #444;
     font-size: 1.1em;
     line-height: 0.5em;
-    margin-bottom: 0.5em;
     font-style: italic;
 }
 
 h4 {
-    font-family: 'Playfair Display', Garamond, serif;
+    /* font-family: 'Playfair Display', Garamond, serif; */
+    font-family: 'Open Sans', Arial, sans-serif;
     color: #444;
     font-size: 0.9em;
     line-height: 2em;
-    margin: 0.2em;
     font-style: italic;
 }
 
@@ -52,14 +46,19 @@ p {
     color: #444;
     font-size: 1.2em;
     line-height: 2.2em;
+    margin-bottom: 2em;
 }
 
-/* li {
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #444;
-    font-size: 1.2em;
-    line-height: 2.2em;
-} */
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .image {
     vertical-align: bottom;

@@ -9,7 +9,8 @@
 {% endblock %} -->
 
 {% block content %}
-    <h1>JUSTIN KIM</h1>
+    <h1>Justin Kim</h1>
+
     <h2>
         <img
             class="image"
@@ -23,6 +24,8 @@
         Current software engineer intern at Open Learning Exchange.<br />
         Looking for a full-time entry level software engineering position.
     </p>
+
+    <h3><a href="{{ url_for('resume') }}"> resume.pdf</a></h3>
 
     <h2>WORK EXPERIENCE</h2>
     <h3>Open Learning Exchange</h3>
@@ -49,40 +52,82 @@
         Intern<br />
         June 2016 ~ Aug 2016
     </h4>
-    <p>Content</p>
+    <p>
+        Conducted market research in order to gauge interest in properties<br />
+
+        Assisted in preparing reports on potential investments<br />
+
+        Performed property inspections to ensure quality standards
+    </p>
 
     <h3>Green River Center for Child Welfare</h3>
     <h4>
         Administrative Coordinator<br />
         May 2014 ~ Apr 2016
     </h4>
-    <p>Content</p>
+    <p>
+        Organized and maintained center records and information<br />
+
+        Coordinated with Songpa-gu District Office to ensure adherence to government regulations<br />
+
+        Drafted proposals to attract sponsorships to fund center activities and events
+    </p>
 
     <h2>PROJECTS</h2>
-    <h3><a href="https://github.com/kjong/rpg-reddit-bot" style="text-decoration: none;">RPG Reddit Bot</a></h3>
+    <h3><a href="https://github.com/kjong/rpg-reddit-bot">RPG Reddit Bot</a></h3>
     <p>
         Project 1 content<br />
     </p>
 
-    <h3><a href="https://github.com/kjong/how-does-twitter-feel-about-it" style="text-decoration: none;">Twitter Sentiment Analysis</a></h3>
+    <h3><a href="https://github.com/kjong/how-does-twitter-feel-about-it">Twitter Sentiment Analysis</a></h3>
     <p>
         Project 2 content<br />
     </p>
 
     <h2>Skills</h2>
     <h4>in order of proficiency</h4>
+    <div class="row">
+        <div class="column">
+            <p>
+                <b>Languages</b><br />
+                Java<br />
+                Python<br />
+                C<br />
+                Bash<br />
+                HTML/CSS<br />
+                SQL<br />
+            </p>
+        </div>
+        <div class="column">
+            <p>
+                <b>Technologies</b><br />
+                Windows<br />
+                Linux<br />
+                Git<br />
+                Raspberry Pi<br />
+                Docker<br />
+                Travis CI<br />
+            </p>
+        </div>
+        <div class="column">
+            <p>
+                <b>Spoken Languages</b><br />
+                English (native)<br />
+                Korean (native)<br />
+                Spanish (working proficiency)
+            </p>
+        </div>
+    </div>
+
+    <h2>Education</h2>
     <p>
-        Java<br />
-        Python<br />
-        C<br />
-        Bash<br />
-        HTML/CSS<br />
-        SQL<br />
+        University of Wisconsin - Madison<br />
+        B.S. Computer Science<br />
+        Dean's List Spring 2017
     </p>
 
-    <h3><a href="{{ url_for('resume') }}" style="text-decoration: none;"> resume.pdf</a></h3>
-
-    <h4>site built using Flask, deployed on AWS Elastic Beanstalk</h4>
+    <h4>site built using Python + Flask<br />
+        deployed using AWS Elastic Beanstalk</h4>
 
     <div class="socials">
         <a href="mailto:justinkim532@gmail.com" style="text-decoration: none;">
