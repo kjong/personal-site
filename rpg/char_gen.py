@@ -50,19 +50,19 @@ def gen_char(in_name, char_num):
 
     # surname (4 numbers)
     char_dict["surname"] = get_line_at_index(
-        "app/rpg/lists/surnames.txt", char_num, 0, 4).capitalize()
+        "rpg/lists/surnames.txt", char_num, 0, 4).capitalize()
 
     # race (2 numbers)
     char_dict["race"] = get_line_at_index(
-        "app/rpg/lists/races.txt", char_num, 4, 6).capitalize()
+        "rpg/lists/races.txt", char_num, 4, 6).capitalize()
 
     # cosmic force (1 number)
     char_dict["cosmic force"] = get_line_at_index(
-        "app/rpg/lists/cosmic.txt", char_num, 6, 6)
+        "rpg/lists/cosmic.txt", char_num, 6, 6)
 
     # alignment (1 number)
     char_dict["alignment"] = get_line_at_index(
-        "app/rpg/lists/alignment.txt", char_num, 7, 7)
+        "rpg/lists/alignment.txt", char_num, 7, 7)
 
     # strength (1 number)
     if str(char_num)[8] == str(0):
@@ -90,11 +90,11 @@ def gen_char(in_name, char_num):
 
     # weapon (2 numbers)
     char_dict["weapon"] = get_line_at_index(
-        "app/rpg/lists/weapons.txt", char_num, 12, 14)
+        "rpg/lists/weapons.txt", char_num, 12, 14)
 
     # utility item (2 numbers)
     char_dict["utility item"] = get_line_at_index(
-        "app/rpg/lists/utility.txt", char_num, 14, 16)
+        "rpg/lists/utility.txt", char_num, 14, 16)
 
     return char_dict
 
@@ -115,7 +115,7 @@ def print_char(char_dict):
 
 # increments generated character count
 def increment():
-    f = open("app/rpg/count.txt", "r+")
+    f = open("rpg/count.txt", "r+")
     count = int(f.readline()) + 1
     f.seek(0)
     f.write(str(count))

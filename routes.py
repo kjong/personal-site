@@ -1,22 +1,24 @@
 import random
+
 from flask import redirect, render_template, send_from_directory
-from app import app
-from app.forms import InputForm
-from .rpg import char_gen
+
+from application import application
+from forms import InputForm
+from rpg import char_gen
 
 
-@app.route('/')
+@application.route('/')
 def home():
     return render_template("home.html")
 
 
-@app.route('/resume')
+@application.route('/resume')
 def resume():
     return send_from_directory('uploads', 'Resume.pdf',
                                mimetype='application/pdf', as_attachment=True)
 
 
-@app.route('/char_gen_form', methods=['GET', 'POST'])
+@application.route('/char_gen_form', methods=['GET', 'POST'])
 def char_gen_form():
     form = InputForm()
 
