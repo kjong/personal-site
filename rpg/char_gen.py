@@ -3,13 +3,6 @@
 import random
 
 
-# creates number to base character on
-def gen_char_num(in_name) -> int:
-    random.seed(in_name)
-    # generate 16 digit char_num
-    return "%0.16d" % random.randint(0, 9999999999999999)
-
-
 # check if string contains all 0s
 def check_zero(string):
     all_zero = True
@@ -99,20 +92,6 @@ def gen_char(in_name, char_num):
     return char_dict
 
 
-# prints generated character
-def print_char(char_dict):
-    print(char_dict.get("name") + " the " + char_dict.get("surname"))
-    print("Race: " + char_dict.get("race"))
-    print("Cosmic force: " + char_dict.get("cosmic force"))
-    print("Alignment: " + char_dict.get("alignment"))
-    print("Strength: " + char_dict.get("strength"))
-    print("Agility: " + char_dict.get("agility"))
-    print("Intelligence: " + char_dict.get("intelligence"))
-    print("Charisma: " + char_dict.get("charisma"))
-    print("Weapon: " + char_dict.get("weapon"))
-    print("Utility item: " + char_dict.get("utility item"))
-
-
 # increments generated character count
 def increment():
     f = open("rpg/count.txt", "r+")
@@ -121,14 +100,9 @@ def increment():
     f.write(str(count))
     f.close()
 
-    print("Generated " + str(count) + " characters")
-
 
 # main
 def main(in_name, char_num):
-    # char_num = gen_char_num(in_name.replace(" ", ""))
-    # char_num = gen_char_num(in_name)
-
     increment()
     return gen_char(in_name, char_num)
 

@@ -23,9 +23,9 @@ def char_gen_form():
     form = InputForm()
 
     if form.validate_on_submit():
-        random.seed(form.name_input)
+        random.seed(form.name_input.data)
         char_num = "%0.16d" % random.randint(0, 9999999999999999)
-        char_dict = char_gen.main(form.name_input, char_num)
+        char_dict = char_gen.main(form.name_input.data, char_num)
 
         return render_template("char-gen-result.html", form=form,
                                char_dict=char_dict)
