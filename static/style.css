@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:900italic,900);
+@import url(https://fonts.googleapis.com/css2?family=DM+Mono&display=swap);
 
 
 body {
@@ -12,13 +12,13 @@ body {
 }
 
 h1 {
-    font-family: 'Playfair Display', Garamond, serif;
+    font-family: 'DM Mono', monospace;
     color: #222;
     font-size: 5em;
 }
 
 h2 {
-    font-family: 'Playfair Display', Garamond, serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     color: #222;
     font-size: 2em;
     line-height: 1.33em;
@@ -26,11 +26,10 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'DM Mono', monospace;
     color: #444;
     font-size: 1.1em;
     line-height: 0.5em;
-    font-style: italic;
 }
 
 h4 {
@@ -88,4 +87,8 @@ a:visited {
 
 a:hover {
     color: #ff9800
+}
+
+a {
+    text-decoration: #ff9800 underline wavy;
 }
