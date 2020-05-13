@@ -1,184 +1,201 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block title %} Home {% endblock %} {% block
+content %}
+<h1>Justin Kim</h1>
 
-{% block title %}
-    Home
-{% endblock %}
+<h2>
+  <img class="image" src="../static/pin.svg" alt="pin" height="40" width="40" />
+  Renton, WA
+</h2>
+<p>
+  Graduated from the University of Wisconsin - Madison with a B.S. in Computer
+  Science<br />
+  Current software engineering intern at Open Learning Exchange<br />
+  Looking for a full-time entry-level software engineering position
+</p>
 
-{% block content %}
-    <h1>Justin Kim</h1>
+<h3><a href="{{ url_for('resume') }}">resume.pdf</a></h3>
 
-    <h2>
-        <img
-            class="image"
-            src="../static/pin.svg"
-            alt="pin"
-            height="40"
-            width="40" />
-        Renton, WA</h2>
+<h2>Work Experience</h2>
+<h3>Open Learning Exchange</h3>
+<h4>
+  Software Engineering Intern<br />
+  Oct 2019 ~ Present<br />
+  Renton, WA
+</h4>
+
+<p>
+  Member of the command line interface team, worked on developing CLI commands
+  for Raspberry Pis used as local servers in the field in refugee camps in
+  Kenya<br />
+
+  Designed and implemented a service management function to build and maintain
+  Docker containers<br />
+
+  Developed interfaces used by the company’s Android remote control application
+  to communicate with the Raspberry Pis and transmit real-time status
+  information on running services through JSONs<br />
+
+  Performed quality assurance testing on any reported issues with the
+  organization’s various software packages and repositories<br />
+
+  Tools & Technologies used: Bash, Docker, Git, Raspberry Pi, Travis CI
+</p>
+
+<h3>YUKORUS real estate holding company</h3>
+<h4>
+  Intern<br />
+  June 2016 ~ Aug 2016<br />
+  Kuala Lumpur, Malaysia
+</h4>
+<p>
+  Conducted market research in order to gauge interest in properties<br />
+
+  Assisted in preparing reports on potential investments<br />
+
+  Performed property inspections to ensure quality standards
+</p>
+
+<h3>Green River Center for Child Welfare</h3>
+<h4>
+  Administrative Coordinator<br />
+  May 2014 ~ Apr 2016<br />
+  Seoul, South Korea
+</h4>
+<p>
+  Coordinated with Songpa-gu District Office to ensure adherence to government
+  regulations<br />
+
+  Compiled proposals to attract sponsorship to fund center activities and
+  expenses
+</p>
+
+<h2>Projects</h2>
+
+<h3><a href="https://github.com/kjong/mymdb-rest-api">MyMDb REST API</a></h3>
+<p>
+  REST API for tracking movies and actors<br />
+
+  Java + Spring + MySQL
+</p>
+
+<h3><a href="https://github.com/kjong/personal-site">Personal Site</a></h3>
+<h4>you're looking at it</h4>
+<p>
+  Personal website to display resume and projects<br />
+
+  Python + Flask + AWS
+</p>
+
+<h3><a href="https://github.com/kjong/rpg-reddit-bot">RPG Reddit Bot</a></h3>
+<h4><a href="{{ url_for('char_gen_form') }}">try me!</a></h4>
+<p>
+  A Reddit Bot that continuously monitors Reddit comments for a specified
+  keyword<br />
+
+  Once found, it automatically generates a custom role-playing game character
+  tied to the commenter's username<br />
+
+  Python
+</p>
+
+<h3>
+  <a href="https://github.com/kjong/how-does-twitter-feel-about-it"
+    >Twitter Sentiment Analysis</a
+  >
+</h3>
+<p>
+  Twitter Sentiment Analysis tool that scrapes tweets containing a specified
+  hashtag<br />
+
+  Reports the total number of positive, neutral, and negative tweets<br />
+
+  Identifies the most positive and most negative tweet pertaining to the
+  specified subject<br />
+
+  Python
+</p>
+
+<h2>Skills</h2>
+<h4>in order of proficiency</h4>
+<div class="row">
+  <div class="column3">
     <p>
-        Graduated from the University of Wisconsin - Madison with a B.S. in Computer Science.<br />
-        Current software engineer intern at Open Learning Exchange.<br />
-        Looking for a full-time entry level software engineering position.
+      <b>Languages</b><br />
+      Python<br />
+      Java<br />
+      Bash<br />
+      C<br />
+      HTML/CSS<br />
+      JavaScript<br />
+      SQL
     </p>
-
-    <h3><a href="{{ url_for('resume') }}">resume.pdf</a></h3>
-
-    <h2>Work Experience</h2>
-    <h3>Open Learning Exchange</h3>
-    <h4>
-        Software Engineer Intern<br />
-        Oct 2019 ~ Present<br />
-        Renton, WA
-    </h4>
-
+  </div>
+  <div class="column3">
     <p>
-        Worked on the command line interface team developing and testing commands for the custom Raspberry
-        Pi images used by the organization<br />
-
-        Completely rewrote the Bash script used to build and maintain Docker Containers running on the Raspberry Pis in
-        order to accommodate easier access through the organization’s Android remote control application<br />
-
-        Performed quality assurance testing on any reported issues with the organization's various software
-        packages and repositories<br />
-
-        Tools & Technologies used: Bash, Docker, Git, Raspberry Pi, Travis CI
+      <b>Technologies</b><br />
+      Windows<br />
+      Linux<br />
+      Git<br />
+      Raspberry Pi<br />
+      Docker
     </p>
-
-    <h3>YUKORUS real estate holding company</h3>
-    <h4>
-        Intern<br />
-        June 2016 ~ Aug 2016<br />
-        Kuala Lumpur, Malaysia
-    </h4>
+  </div>
+  <div class="column3">
     <p>
-        Conducted market research in order to gauge interest in properties<br />
-
-        Assisted in preparing reports on potential investments<br />
-
-        Performed property inspections to ensure quality standards
+      <b>Spoken Languages</b><br />
+      English (native)<br />
+      Korean (native)
     </p>
+  </div>
+</div>
 
-    <h3>Green River Center for Child Welfare</h3>
-    <h4>
-        Administrative Coordinator<br />
-        May 2014 ~ Apr 2016<br />
-        Seoul, South Korea
-    </h4>
+<h2>Education</h2>
+<p>
+  University of Wisconsin - Madison<br />
+  B.S. Computer Science<br />
+  Dean's List Spring 2017<br />
+</p>
+<div class="row">
+  <div class="column2">
     <p>
-        Organized and maintained center records and information<br />
-
-        Coordinated with Songpa-gu District Office to ensure adherence to government regulations<br />
-
-        Drafted proposals to attract sponsorships to fund center activities and events
+      Algorithms<br />
+      Computer Engineering<br />
+      Computer Networks<br />
+      Data Structures<br />
+      Discrete Mathematics<br />
+      Machine Organization<br />
+      Operating Systems
     </p>
-
-    <h2>Projects</h2>
-    <h3><a href="https://github.com/kjong/rpg-reddit-bot">RPG Reddit Bot</a></h3>
-    <h4><a href="{{ url_for('char_gen_form') }}">try me!</a></h4>
+  </div>
+  <div class="column2">
     <p>
-        A Reddit Bot that continuously monitors Reddit comments for a specified keyword<br />
-        Once found, it automatically generates a custom role-playing game character based on the commenter's username<br />
-        Developed using Python + Python Reddit API Wrapper (PRAW)
+      Calculus<br />
+      Computer Graphics<br />
+      Cryptography<br />
+      Database Management Systems<br />
+      Information Security<br />
+      Matrix and Linear Algebra
     </p>
+  </div>
+</div>
 
-    <h3><a href="https://github.com/kjong/how-does-twitter-feel-about-it">Twitter Sentiment Analysis</a></h3>
-    <p>
-        Twitter Sentiment Analysis tool that scrapes tweets containing a specified hashtag<br />
-        Reports the total number of positive, neutral, and negative tweets<br />
-        Identifies the most positive and most negative tweet pertaining to the specified subject<br />
-        Developed using Python + Tweepy + VADER
-    </p>
+<h4>
+  site built using Python + Flask<br />
+  deployed using AWS Elastic Beanstalk
+</h4>
 
-    <h2>Skills</h2>
-    <h4>in order of proficiency</h4>
-    <div class="row">
-        <div class="column3">
-            <p>
-                <b>Languages</b><br />
-                Python<br />
-                Java<br />
-                C<br />
-                Bash<br />
-                HTML/CSS<br />
-                JavaScript<br />
-                SQL<br />
-            </p>
-        </div>
-        <div class="column3">
-            <p>
-                <b>Technologies</b><br />
-                Windows<br />
-                Linux<br />
-                Git<br />
-                Raspberry Pi<br />
-                AWS<br />
-                Docker<br />
-                Travis CI<br />
-            </p>
-        </div>
-        <div class="column3">
-            <p>
-                <b>Spoken Languages</b><br />
-                English (native)<br />
-                Korean (native)<br />
-                Spanish (working proficiency)
-            </p>
-        </div>
-    </div>
-
-    <h2>Education</h2>
-    <p>
-        University of Wisconsin - Madison<br />
-        B.S. Computer Science<br />
-        Dean's List Spring 2017<br />
-    </p>
-    <div class="row">
-        <div class="column2">
-            <p>
-                Algorithms<br />
-                Computer Engineering<br />
-                Computer Networks<br />
-                Data Structures<br />
-                Discrete Mathematics<br />
-                Machine Organization<br />
-                Operating Systems
-            </p>
-        </div>
-        <div class="column2">
-            <p>
-                Calculus 1 & 2<br />
-                Computer Graphics<br />
-                Cryptography<br />
-                Database Management Systems<br />
-                Information Security<br />
-                Matrix and Linear Algebra
-            </p>
-        </div>
-    </div>
-
-    <h4>site built using Python + Flask<br />
-        deployed using AWS Elastic Beanstalk</h4>
-
-    <div class="socials">
-        <a href="mailto:justinkim532@gmail.com" style="text-decoration: none;">
-            <img
-                src="../static/email.svg"
-                height="30"
-                width="30" />
-        </a>
-        <a href="https://www.linkedin.com/in/jong-hoon-kim/" style="text-decoration: none;">
-            <img
-                src="../static/linkedin.svg"
-                alt="linkedin"
-                height="30"
-                width="30" />
-        </a>
-        <a href="https://github.com/kjong" style="text-decoration: none;">
-            <img
-                src="../static/github.svg"
-                alt="github"
-                height="30"
-                width="30" />
-        </a>
-    </div>
+<div class="socials">
+  <a href="mailto:justinkim532@gmail.com" style="text-decoration: none;">
+    <img src="../static/email.svg" height="30" width="30" />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/jong-hoon-kim/"
+    style="text-decoration: none;"
+  >
+    <img src="../static/linkedin.svg" alt="linkedin" height="30" width="30" />
+  </a>
+  <a href="https://github.com/kjong" style="text-decoration: none;">
+    <img src="../static/github.svg" alt="github" height="30" width="30" />
+  </a>
+</div>
 {% endblock %}
